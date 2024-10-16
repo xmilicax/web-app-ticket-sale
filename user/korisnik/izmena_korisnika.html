@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apitoken"
+          content="WV9od4JXs3yDUFfuVbFr51JP93FZTpDkHSoUvGBRxbnYjHalrYj3iQmF03YDgKiSLpSFAw1UkwhXWAZcXgodhzAzjP">
+    <link rel="stylesheet" href="../../css/prijava_reg.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="../../js/izmena_korisnika.js"></script>
+
+    <title>Измена корисника</title>
+</head>
+<header><a href="../administrator.html">Почетна</a></header>
+<body>
+<div id="izmena_korisnika">
+    <h1>Измена корисника</h1>
+    <form id="forma" method="POST" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/korisnik">
+        <label for="imeprezime">Име и презиме:</label>
+        <input type="text" id="imeprezime" placeholder="Овде унети име и презиме">
+        <div id="greska_imeprezime" class="div_hidden" hidden></div>
+
+        <label for="email">Имејл адреса:</label>
+        <input type="email" id="email" placeholder="Овде унети имејл адресу">
+        <div id="greska_email" class="div_hidden" hidden></div>
+
+        <label for="lozinka">Лозинка:</label>
+        <input type="password" id="lozinka" placeholder="Овде унети лозинку" minlength="6">
+        <div id="greska_lozinka" class="div_hidden" hidden></div>
+
+        <!--
+        <label for="ponovljenalozinka">Поновљена лозинка:</label>
+        <input type="password" id="ponovljenalozinka" placeholder="Овде унети поновљену лозинку"  minlength="6">
+        <div id="greska_ponovljenalozinka" class="div_hidden" hidden></div>
+        -->
+
+        <label for="telefon">Број телефона:</label>
+        <input type="tel" id="telefon" placeholder="Овде унети број телефона" minlength="10" maxlength="15">
+        <!-- min 9, max 14 cifara, plus se ne računa -->
+        <div id="greska_telefon" class="div_hidden" hidden></div>
+
+        <label for="uloge">Изаберите улогу:</label>
+        <select name="uloge" id="uloge" class="box"></select>
+
+        <br><br>
+
+        <label for="lokacije">Изаберите локацију:</label>
+        <select name="lokacije" id="lokacije" class="box"></select>
+
+        <button type="submit" class="button">Сачувај измене</button>
+        <div id="potvrda" class="div_hidden" hidden></div>
+        <div id="greska" class="div_hidden" hidden></div>
+    </form>
+</div>
+<br>
+</body>
+<footer>
+    <p>&copy; 2023 Милица Лазић И011-41/2020</p>
+</footer>
+</html>

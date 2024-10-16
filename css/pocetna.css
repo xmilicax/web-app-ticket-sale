@@ -1,0 +1,141 @@
+html {
+    font-family: "Lucida Sans Typewriter", Montserrat, serif;
+}
+
+header {
+    padding-right: 1em;
+    margin-right: auto;
+}
+
+header a {
+    display: inline-block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #5355c9;
+    transition: color 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    background-image: url('img/background22-01.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* 100% of the height */
+}
+
+h1 {
+    padding: 10px;
+    color: #DAFF94;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+}
+
+h2 {
+    color: #fff;
+    margin: auto;
+    font-size: 3em;
+    font-style: italic;
+    letter-spacing: 20px;
+}
+
+h3 {
+    color: red;
+    margin: auto;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+h3 span {
+    font-weight: bolder;
+}
+
+nav {
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 70px;
+    column-gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #131313;
+    border-color: #131313;
+    transition: color 0.3s;
+}
+
+nav > ul li a {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #5355c9;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+nav > ul li:hover::after {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+}
+*/
+
+#blocked {
+    position: relative;
+    margin: auto;
+    max-width: 80%;
+    padding: 40px 80px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.91);
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+
+footer {
+    background-color: rgba(19, 19, 19, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul li {
+        display: block;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+
+

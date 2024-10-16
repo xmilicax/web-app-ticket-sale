@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apitoken"
+          content="WV9od4JXs3yDUFfuVbFr51JP93FZTpDkHSoUvGBRxbnYjHalrYj3iQmF03YDgKiSLpSFAw1UkwhXWAZcXgodhzAzjP">
+    <link rel="stylesheet" href="css/prijava_reg.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/prijava.js"></script>
+
+    <title>Пријава корисника</title>
+</head>
+<body>
+<h1>Пријава корисника</h1>
+
+<nav>
+    <form id="forma" method="post" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/login">
+        <label for="email">Имејл адреса:</label>
+        <input type="email" id="email" placeholder="Овде унети имејл адресу" required>
+        <div id="greska_email" class="div_hidden"></div>
+
+        <label for="lozinka">Лозинка:</label>
+        <input type="password" id="lozinka" placeholder="Овде унети лозинку" required>
+        <div id="greska_lozinka" class="div_hidden"></div>
+
+        <div id="pitanje">
+            Немаш профил?
+            <a href="registracija.html">Региструј се.</a>
+        </div>
+
+        <button type="submit" class="button">Пријави се</button>
+        <div id="error" class="div_hidden"></div>
+    </form>
+</nav>
+</body>
+<br>
+<footer>
+    <p>&copy; 2023 Милица Лазић И011-41/2020</p>
+</footer>
+</html>

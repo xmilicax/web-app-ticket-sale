@@ -1,0 +1,97 @@
+html {
+    font-family: "Lucida Sans Typewriter", Montserrat, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url('img/city_solid.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    padding-right: 1em;
+    margin-right: auto;
+}
+
+header a {
+    display: inline-block;
+    padding: 1em;
+    color: #5355c9;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #4f4f4f;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+h1 {
+    padding: 10px;
+    color: #131313;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+form{
+    position: relative;
+    margin: auto;
+    padding: 1em;
+    max-width: 900px;
+    background-color: #eee;
+    font-weight: bold;
+    color: #5355c9;
+    border: 2px solid #aaa;
+}
+
+form>input, form>button, form>label, form>textarea{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing:border-box;
+}
+form>textarea{
+    margin-bottom: 0;
+}
+
+form>textarea{
+    height: 80px;
+}
+
+button {
+    font-family: "Lucida Sans Typewriter", Arial, serif;
+    color: #131313;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 5px 5px #131313;
+    border:none;
+    background-color: #aaaaaa;
+    width: 100%;
+}
+
+button:hover {
+    color: #131313;
+    background-color: #d3d3d3;
+    box-shadow: 5px 5px #5355c9;
+}
+
+button:active{
+    box-shadow: 5px 5px #DAFF94;
+}
+
+footer {
+    background-color: rgba(19, 19, 19, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
