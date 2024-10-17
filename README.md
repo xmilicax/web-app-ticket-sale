@@ -14,13 +14,13 @@ The functionality is divided into five roles – Guest, Registered User, Blocked
 - **Registered User** and Cashier were made only to exist as roles, as stated in the guidelines.
 
 To quickly log in, please see the credentials in the file **pass.txt**. 
-Visit the prototype on https://web-app-ticket-sale.netlify.app/. 
+Visit the prototype at https://web-app-ticket-sale.netlify.app/. 
 
 ###### [SRB]
 Aplikacija je kreirana kao projekat za predmet na osnovnim studijama. Glavni cilj bio je da se napravi aplikacija koja bi omogućila rad servisa za prodaju ulaznica za događaje uz praćenje strogo definisanih pravila na platformi Postman.
 Aplikacija je napisana na srpskom jeziku.
 
-**Technologies used**: HTML, CSS, JavaScript, jQuery, AJAX
+**Upotrebljene tehnologije**: HTML, CSS, JavaScript, jQuery, AJAX
 
 Funcionalnost je podeljena na pet uloga – Gost, Registrovani korisnik, Blokirani korisnik, Blagajnik i Administrator.
 - **Gost** ima mogućnost da se prijavi, registruje i pogleda listu događaja.
